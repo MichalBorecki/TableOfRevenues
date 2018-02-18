@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zestawienie przychodów</title>
+    </head>
+    <body>
+        <h1>Zestawienie przychodów</h1>
+        
+        <p>Wybierz firmę:
+        <br>
+            <select id="companyName" style="width: 150px">
+            <option disabled selected value> -- wybierz z listy -- </option>
+            <option value="PolExport">PolExport</option>
+            <option value="DexTransp">DexTransp</option>
+            <option value="Aderpes">Aderpes</option>
+        </select></p>
+        
+        <form>
+              Wpisz koszt usługi: <br><input type="number" pattern="[0-9]+([\.,][0-9]+)?" step="0.01" id="valueFromInvoice" style="width: 145px"><br>
+        </form> 
+        
+        <p>Wybierz rabat:
+        <br>   
+        <select id="discountValue" style="width: 150px">
+            <option disabled selected value> -- wybierz z listy -- </option>
+            <option value="0">0 %</option>
+            <option value="5">5 %</option>
+            <option value="10">10 %</option>
+        </select></p>
+        
+        <br>  
+
+        <button id="addButton">Dodaj</button>
+        
+        <br><br><br><br>
+        
+        <table id="t01" width="100%" border="1">
+          <tr>
+            <th width="150px">Firma</th>
+            <th width="90px">Koszt usługi</th>
+            <th width="90px">Rabat</th>
+            <th width="90px">Koszt uwzględniający rabat</th>
+          </tr>
+        </table>
+        
+        <script src="myapp.js"></script>
+    </body>
+</html>
